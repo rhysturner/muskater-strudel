@@ -77,6 +77,56 @@ A dark, atmospheric 80s sci-fi horror soundtrack inspired by Stranger Things:
 - Mute layers: Change `$:` to `_$:` to hear individual elements
 - Experiment with scales: Try `C:phrygian` or `C:locrian` for even darker moods
 
+### 🎛️ Moog Dimensions (`moog_dimensions.js`)
+
+An ambient atmospheric soundscape featuring a rolling Moog-style bass synthesizer:
+
+- **Tempo**: 52 BPM (slow with movement)
+- **Key**: C minor
+- **Mood**: Deep, warm, analog, hypnotic
+- **Elements**:
+  - **Rolling Moog bass** - Classic analog-style bassline with movement
+  - Moog bass octave layer for extra depth
+  - Moog counter melody with sparse phrases
+  - Moog bass harmonic (fifth) for richness
+  - Deep sub-bass drone foundation
+  - Slowly morphing dark pad with filter automation
+  - Ethereal high-register pad with reverb
+  - Ambient wind and atmospheric noise layers
+  - Ghostly high-frequency whisper synth
+  - Breathing pad with slow pulsing
+  - Distant echo fragments
+
+**Moog Bass Characteristics:**
+- Sawtooth and triangle waves for warm analog tone
+- Automated filter modulation with `sine.range()` for classic Moog sweep
+- Rolling 16th note patterns for hypnotic groove
+- Multiple octaves layered for massive sound
+- Resonant low-pass filter (lpq 4-12) for that signature Moog character
+- Short attack/decay for punchy articulation
+
+**Sound characteristics:**
+- Combines ambient atmosphere with rhythmic bass movement
+- Filter sweeps create organic, breathing quality
+- 11 separate orbits for maximum spatial depth
+- Balance between rhythmic drive and ambient space
+- Vintage analog synthesizer aesthetic
+
+**To play:**
+1. Go to [https://strudel.cc/](https://strudel.cc/)
+2. Copy the contents of `moog_dimensions.js`
+3. Paste into the editor
+4. Press **Ctrl+Enter** to play!
+5. Press **Ctrl+.** to stop
+
+**Customization tips:**
+- Slower bass: Change the `*2` multiplier to `*1` in the bass patterns
+- More aggressive filter: Increase `.lpq()` values to 15-20 for screaming resonance
+- Spacier: Increase `.room()` on the Moog bass for more atmosphere
+- Isolate the bass: Mute all other `$:` lines to hear just the Moog layers
+- Different patterns: Try different note patterns in the bass line
+- More movement: Increase filter sweep range in `sine.range()` parameters
+
 ### 🌑 Upside Down (`upside_down.js`)
 
 A pure ambient atmospheric soundscape with no drums - inspired by the eerie parallel dimension:
