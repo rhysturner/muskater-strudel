@@ -171,6 +171,65 @@ A pure ambient atmospheric soundscape with no drums - inspired by the eerie para
 - Darker tone: Try `C:phrygian` or add more dissonant intervals to chords
 - More sparse: Add more `~` rests to the melodic patterns
 
+### 🌀 Dimensional Shift (`dimensional_shift.js`)
+
+A progressive evolution from ambient Moog atmospheres into driving psytrance:
+
+- **Tempo**: 138 BPM (classic psytrance tempo)
+- **Key**: C minor
+- **Mood**: Hypnotic, psychedelic, progressive, energetic
+- **Structure**: Gradually builds from ambient into full psytrance
+- **Elements**:
+  - **Rolling Moog bass** - Evolves from ambient to psytrance style
+  - Progressive kick drum (starts sparse, builds to four-on-the-floor)
+  - Psytrance bass with aggressive filter sweeps and distortion
+  - Building hi-hat patterns (sparse → dense 16th notes)
+  - Off-beat hi-hats (signature psytrance rhythm)
+  - Kick drum fills for energy bursts
+  - Atmospheric dark pad (continuous throughout)
+  - Ethereal high pad for psychedelic atmosphere
+  - Acid-style lead with rapid filter modulation
+  - Tribal percussion elements
+  - Percussive fills and glitch effects
+  - Noise riser sweeps for build-ups
+  - Deep sub-bass foundation
+  - Progressive snare builds
+  - Slow evolving atmospheric textures
+
+**Psytrance Characteristics:**
+- 138 BPM with driving four-on-the-floor kick
+- Rolling basslines with `*4` and `*8` patterns
+- Aggressive low-pass filter sweeps using `sine.range()`
+- High resonance (lpq 12-20) for screaming acid sounds
+- Off-beat hi-hats creating hypnotic groove
+- Multiple percussion layers for tribal feel
+- Distortion on bass for grit and power
+- Fast filter modulation with `.fast(4)` for psychedelic effect
+- 16 separate orbits for complex spatial mixing
+
+**Progressive Structure:**
+- Uses `<>` (angle brackets) to create evolving patterns
+- Elements progressively enter using `~ ~ ~ pattern` structure
+- Bass complexity increases over time with `*<2 2 4 8>`
+- Drums build from nothing to full psytrance rhythm
+- Creates sense of journey from ambient to peak energy
+
+**To play:**
+1. Go to [https://strudel.cc/](https://strudel.cc/)
+2. Copy the contents of `dimensional_shift.js`
+3. Paste into the editor
+4. Press **Ctrl+Enter** to play!
+5. Press **Ctrl+.** to stop
+
+**Customization tips:**
+- Faster tempo: Try `setcpm(145/4)` for full-on psytrance or `setcpm(148/4)` for hi-tech
+- More aggressive: Increase `.distort()` and `.lpq()` values
+- Slower build: Add more `~` patterns before elements enter
+- Remove sections: Mute any `$:` line to hear the mix without that element
+- More trippy: Increase filter modulation speed with `.fast(8)` or `.fast(16)`
+- Different scales: Try `C:phrygian` for darker or `C:dorian` for different flavor
+- More glitchy: Lower `.crush()` values (try 4 or 2) for more lo-fi texture
+
 ## Resources
 
 - [Strudel Workshop](https://strudel.cc/workshop/getting-started/) - Learn the basics
