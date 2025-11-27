@@ -230,6 +230,128 @@ A progressive evolution from ambient Moog atmospheres into driving psytrance:
 - Different scales: Try `C:phrygian` for darker or `C:dorian` for different flavor
 - More glitchy: Lower `.crush()` values (try 4 or 2) for more lo-fi texture
 
+### 🏙️ Detroit Minimal (`detroit_minimal.js`)
+
+A clean minimal Detroit-style progressive house track with hypnotic rolling bassline:
+
+- **Tempo**: 126 BPM (classic house tempo)
+- **Key**: C minor
+- **Mood**: Deep, hypnotic, stripped-back, groovy
+- **Style**: Detroit techno meets minimal house
+- **Elements**:
+  - **Tight kick drum** - Clean, punchy four-on-the-floor
+  - **Rolling bassline** - Hypnotic 16th note pattern (the centerpiece)
+  - Deep sine sub-bass for foundation
+  - Crisp minimal hi-hats with velocity variation for swing
+  - Sparse open hat accents for groove
+  - Minimal clap on beats 2 and 4
+  - Atmospheric chord stabs (very sparse)
+  - Subtle rim shot percussion for texture
+  - Deep atmospheric pad (barely audible)
+  - Bass harmonic layer for richness
+  - Delayed clicks for spatial interest
+  - Subtle ride cymbal for groove
+
+**Detroit/Minimal Aesthetic:**
+- Clean, stripped-back arrangement
+- Focus on groove and space over complexity
+- Rolling bassline is the main melodic element
+- Minimal use of effects - dry, tight sound
+- Subtle filter modulation with `sine.range()` for organic movement
+- Very sparse chord usage - letting the bass breathe
+- Swing/groove created through velocity variations
+- Deep, warm, analog-inspired sounds
+
+**Production Characteristics:**
+- Only 12 orbits - intentionally simple mixing
+- Emphasis on rhythm and bass over melody
+- Short, tight envelopes for punchy sound
+- Minimal reverb/delay - mostly dry
+- Low-pass filtering keeps everything warm and deep
+- Triangle and sine waves for smooth, deep tones
+- Sawtooth bass with gentle filter sweep
+
+**To play:**
+1. Go to [https://strudel.cc/](https://strudel.cc/)
+2. Copy the contents of `detroit_minimal.js`
+3. Paste into the editor
+4. Press **Ctrl+Enter** to play!
+5. Press **Ctrl+.** to stop
+
+**Customization tips:**
+- Different bass pattern: Change the note pattern for new grooves
+- More swing: Adjust hi-hat velocity patterns for more/less groove
+- Deeper: Lower the `.lpf()` values for darker sound
+- More minimal: Mute the pad and chord layers with `_$:`
+- Add variation: Use `<>` angle brackets to alternate patterns
+- Faster/slower: Try `setcpm(120/4)` for deep house or `setcpm(130/4)` for tech house
+- More Detroit: Increase the bass filter sweep range for more movement
+- Drier sound: Lower all `.room()` values to 0.2 or less
+
+### 🚀 Left Field Trance (`left_field_trance.js`)
+
+A high-energy Tiesto-style progressive trance track using unconventional leftfield sounds:
+
+- **Tempo**: 138 BPM (trance tempo)
+- **Key**: C minor
+- **Mood**: Euphoric, anthemic, weird, unexpected
+- **Concept**: Classic trance structure with non-traditional sound sources
+- **Elements**:
+  - **Four-on-the-floor kick** - Driving trance foundation
+  - **Insect bass** - Pitched-down insect samples as bass synth
+  - Trance bass stabs (traditional sawtooth)
+  - **Metal hi-hats** - Metal samples pitched up for off-beat hats
+  - **Crow plucks** - Melodic pluck using pitched crow sounds
+  - **Space leads** - Soaring anthemic lead from space samples
+  - **Jazz percussion** - Rolling percussion from jazz kit samples
+  - Classic trance snare on beats 2 and 4
+  - **Wind pads** - Wind samples as atmospheric pad
+  - **Casio chord stabs** - Retro casio samples for chords
+  - **Numbers risers** - Build-ups using numbers sample
+  - **East glitch percussion** - Glitchy hits from east samples
+  - Deep sine sub-bass foundation
+  - **Numbers vocal chops** - Chopped vocal-like sounds
+  - **Insect sweeps** - Sweep effects from insect samples
+  - Breakdown atmospheric elements
+  - **Metal lead stabs** - Lead hits using metal samples
+  - Open hi-hat accents
+
+**Leftfield Sound Design:**
+- Uses unconventional samples as primary melodic/rhythmic elements
+- `insect`, `crow`, `metal`, `space`, `jazz`, `east`, `wind`, `casio`, `numbers`
+- Pitched using `.speed()` to create melodic content
+- Heavy processing with filters, distortion, and bit crushing
+- Creates familiar trance structure with unfamiliar sounds
+- Result is both accessible and weird
+
+**Trance Production Techniques:**
+- Four-on-the-floor kick with slight distortion for punch
+- Snare on 2 and 4 (classic trance)
+- Off-beat hi-hats for driving groove
+- Anthemic lead melodies with delay/reverb
+- Chord stabs for energy
+- Riser effects for builds
+- Filter sweeps using `sine.range()` for movement
+- Multiple delay/reverb layers for space
+- 20 separate orbits for complex mixing
+
+**To play:**
+1. Go to [https://strudel.cc/](https://strudel.cc/)
+2. Copy the contents of `left_field_trance.js`
+3. Paste into the editor
+4. Press **Ctrl+Enter** to play!
+5. Press **Ctrl+.** to stop
+
+**Customization tips:**
+- Experiment with different samples: Try `wind`, `jazz`, or any other sample
+- Change pitch: Modify `.speed()` values for different tones
+- More aggressive: Increase `.distort()` and `.crush()` values
+- Different melodies: Change the `n()` patterns for new sequences
+- More/less glitchy: Adjust `.crush()` values (lower = more glitchy)
+- Swap sound sources: Replace any sample name with another for new textures
+- Add randomness: Use `rand` or `irand` for generative elements
+- Different trance style: Try 140 BPM for uplifting or 145 BPM for harder trance
+
 ## Resources
 
 - [Strudel Workshop](https://strudel.cc/workshop/getting-started/) - Learn the basics
